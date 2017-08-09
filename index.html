@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src= "js/scripts.js"></script>
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey</h1>
+      <form id="survey">
+        <!-- NAME -->
+        <div class ="form-group">
+          <label for="name">Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <!-- FOOD -->
+        <div class="form-group">
+          <label for="favoritefood">Favorite food</label>
+          <select class="form-control" id="favoritefood">
+          <option value="bread">Bread</option>
+          <option value="crackers">Crackers</option>
+          <option value="rice">Rice</option>
+          <option value="pasta">Pasta</option>
+          </select>
+        </div>
+        <!-- COLOR -->
+        <div class="form-group">
+          <label for="color">Favorite color</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="red" value="red" checked>
+              Red
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="yellow" value="yellow">
+              Yellow
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="blue" value="blue">
+              Blue
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+        <div id="display">
+        </div>
+        <div id="display1">
+        </div>
+        <div id="display2">
+        </div>
+
+    </div>
+  </body>
+</html>
